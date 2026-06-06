@@ -365,8 +365,8 @@ export default function Index() {
 
             <div className="space-y-3">
               {[
-                { icon: "MessageCircle", label: "Telegram-поддержка", value: "@lostspace_support", href: "https://t.me/lostspace_support" },
-                { icon: "Mail", label: "Email", value: "support@lostspace.ru", href: "mailto:support@lostspace.ru" },
+                { icon: "MessageCircle", label: "Telegram-поддержка", value: "@Ilikpilik", href: "https://t.me/Ilikpilik" },
+                { icon: "Mail", label: "Email", value: "atgashuddlv@yandex.ru", href: "mailto:atgashuddlv@yandex.ru" },
               ].map((c, i) => (
                 <a
                   key={i}
