@@ -309,7 +309,7 @@ export default function Index() {
 
           <div className="grid sm:grid-cols-2 gap-6">
             <a
-              href="https://youtube.com"
+              href="https://www.youtube.com/@LostSpace_seson"
               target="_blank"
               rel="noopener noreferrer"
               className="card-fantasy rounded-lg p-8 flex flex-col items-center gap-4 transition-all duration-300 hover:-translate-y-2"
