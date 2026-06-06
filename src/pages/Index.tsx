@@ -307,24 +307,38 @@ export default function Index() {
           <h2 className="font-display text-5xl sm:text-6xl font-bold mb-4 text-glow-gold" style={{ color: "var(--gold-light)" }}>Сообщество</h2>
           <div className="ornament-line w-64 mx-auto mb-12" />
 
+          <div className="mb-8 rounded-xl overflow-hidden" style={{ border: "1px solid rgba(201,151,58,0.25)" }}>
+            <img
+              src="https://cdn.poehali.dev/projects/ba91ad46-0670-47e2-b1b7-be0aa0dcc81e/bucket/29b54a3f-4a38-4805-8a76-393853f387e4.png"
+              alt="Lost Space: Chronicles of the Void"
+              className="w-full object-cover"
+              style={{ maxHeight: "360px", objectPosition: "center top" }}
+            />
+          </div>
+
           <div className="grid sm:grid-cols-2 gap-6">
             <a
               href="https://www.youtube.com/@LostSpace_seson"
               target="_blank"
               rel="noopener noreferrer"
-              className="card-fantasy rounded-lg p-8 flex flex-col items-center gap-4 transition-all duration-300 hover:-translate-y-2"
+              className="card-fantasy rounded-lg overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2"
               style={{ textDecoration: "none" }}
             >
-              <div className="w-16 h-16 rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-110" style={{ background: "rgba(255,0,0,0.15)", border: "2px solid rgba(255,0,0,0.3)" }}>
-                <span className="text-3xl">▶</span>
+              <div className="relative h-32 overflow-hidden">
+                <img src="https://cdn.poehali.dev/projects/ba91ad46-0670-47e2-b1b7-be0aa0dcc81e/bucket/29b54a3f-4a38-4805-8a76-393853f387e4.png" alt="YouTube" className="w-full h-full object-cover" style={{ objectPosition: "center 20%" }} />
+                <div className="absolute inset-0 flex items-center justify-center" style={{ background: "rgba(0,0,0,0.45)" }}>
+                  <div className="w-14 h-14 rounded-full flex items-center justify-center" style={{ background: "rgba(255,0,0,0.8)" }}>
+                    <span className="text-2xl">▶</span>
+                  </div>
+                </div>
               </div>
-              <div>
-                <div className="font-display text-2xl mb-1" style={{ color: "rgba(232,210,170,0.9)" }}>YouTube</div>
+              <div className="p-6 flex flex-col items-center gap-3 flex-1">
+                <div className="font-display text-2xl" style={{ color: "rgba(232,210,170,0.9)" }}>YouTube</div>
                 <div className="font-body text-sm" style={{ color: "rgba(232,210,170,0.45)" }}>Гайды, летсплеи и обзоры обновлений</div>
-              </div>
-              <div className="flex items-center gap-1 text-sm font-body mt-auto" style={{ color: "rgba(255,80,80,0.7)" }}>
-                <span>Перейти на канал</span>
-                <Icon name="ExternalLink" size={14} />
+                <div className="flex items-center gap-1 text-sm font-body mt-auto" style={{ color: "rgba(255,80,80,0.7)" }}>
+                  <span>Перейти на канал</span>
+                  <Icon name="ExternalLink" size={14} />
+                </div>
               </div>
             </a>
 
@@ -332,19 +346,24 @@ export default function Index() {
               href="https://t.me/lost_space3"
               target="_blank"
               rel="noopener noreferrer"
-              className="card-fantasy rounded-lg p-8 flex flex-col items-center gap-4 transition-all duration-300 hover:-translate-y-2"
+              className="card-fantasy rounded-lg overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2"
               style={{ textDecoration: "none" }}
             >
-              <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{ background: "rgba(39,158,255,0.15)", border: "2px solid rgba(39,158,255,0.3)" }}>
-                <span className="text-3xl">✈</span>
+              <div className="relative h-32 overflow-hidden">
+                <img src="https://cdn.poehali.dev/projects/ba91ad46-0670-47e2-b1b7-be0aa0dcc81e/bucket/29b54a3f-4a38-4805-8a76-393853f387e4.png" alt="Telegram" className="w-full h-full object-cover" style={{ objectPosition: "center 40%" }} />
+                <div className="absolute inset-0 flex items-center justify-center" style={{ background: "rgba(0,0,0,0.45)" }}>
+                  <div className="w-14 h-14 rounded-full flex items-center justify-center" style={{ background: "rgba(39,158,255,0.8)" }}>
+                    <span className="text-2xl">✈</span>
+                  </div>
+                </div>
               </div>
-              <div>
-                <div className="font-display text-2xl mb-1" style={{ color: "rgba(232,210,170,0.9)" }}>Telegram</div>
+              <div className="p-6 flex flex-col items-center gap-3 flex-1">
+                <div className="font-display text-2xl" style={{ color: "rgba(232,210,170,0.9)" }}>Telegram</div>
                 <div className="font-body text-sm" style={{ color: "rgba(232,210,170,0.45)" }}>Новости, ивенты и общение</div>
-              </div>
-              <div className="flex items-center gap-1 text-sm font-body mt-auto" style={{ color: "rgba(39,158,255,0.7)" }}>
-                <span>Открыть канал</span>
-                <Icon name="ExternalLink" size={14} />
+                <div className="flex items-center gap-1 text-sm font-body mt-auto" style={{ color: "rgba(39,158,255,0.7)" }}>
+                  <span>Открыть канал</span>
+                  <Icon name="ExternalLink" size={14} />
+                </div>
               </div>
             </a>
           </div>
