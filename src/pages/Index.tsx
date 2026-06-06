@@ -329,7 +329,7 @@ export default function Index() {
             </a>
 
             <a
-              href="https://t.me"
+              href="https://t.me/lost_space3"
               target="_blank"
               rel="noopener noreferrer"
               className="card-fantasy rounded-lg p-8 flex flex-col items-center gap-4 transition-all duration-300 hover:-translate-y-2"
